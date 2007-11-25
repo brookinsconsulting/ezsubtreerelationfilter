@@ -45,7 +45,7 @@ class eZSubTreeRelationFilter
             $joins = "ezcontentobject_tree.contentobject_id IN ( $subSelect ) AND";
         }
 
-        return array( 'tables' => '', 'joins'  => $joins );
+        return array( 'tables' => '', 'joins'  => $joins, 'columns' => '' );
     }
 }
 
