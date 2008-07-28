@@ -16,7 +16,7 @@ class eZSubTreeRelationFilter
             if ( $attributeID === false )
             {
                 eZDebug::writeError( 'Unknown attribute identifier: ' . $attributeID, 'eZSubtreeRelationFilter::sqlParams()' );
-                return array( 'tables' => '', 'joins' => '' );
+                return array( 'tables' => '', 'joins' => '', 'columns' => '' );
             }
         }
 
@@ -28,7 +28,7 @@ class eZSubTreeRelationFilter
             FROM ezcontentobject_link l0, ezcontentobject_tree t0
             WHERE l0.from_contentobject_id = ezcontentobject_tree.contentobject_id AND
                   l0.from_contentobject_version = ezcontentobject_tree.contentobject_version AND
-                  l0.contentclassattribute_id = $attribute_id AND
+                  l0.contentclassattribute_id = $attributeID AND
                   l0.to_contentobject_id = t0.contentobject_id AND
                   (
                       t0.path_identification_string='$pathIdentificationString' OR
