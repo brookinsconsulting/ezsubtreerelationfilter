@@ -2,7 +2,7 @@
 //
 // ## BEGIN COPYRIGHT, LICENSE AND WARRANTY NOTICE ##
 // SOFTWARE NAME: eZ Publish Subtree Relation Filter extension
-// SOFTWARE RELEASE: 1.x
+// SOFTWARE RELEASE: 2.x
 // COPYRIGHT NOTICE: Copyright (C) 2007-2008 Kristof Coomans <http://blog.kristofcoomans.be>
 // SOFTWARE LICENSE: GNU General Public License v2.0
 // NOTICE: >
