@@ -44,7 +44,6 @@ class eZSubTreeRelationFilter
             }
         }
 
-        include_once( 'lib/ezdb/classes/ezdb.php' );
         $db = eZDB::instance();
         $pathIdentificationString = $db->escapeString( $params[1] );
 
